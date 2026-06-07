@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo">🩸 Blood Lab</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <h1 style="text-align: center; padding: 10px;">Patient Dashboard</h1>
+
+  <input type="text" id="search" placeholder="Search Patient" onkeyup="searchPatient()">
+
+  <br><br>
+
+  <table>
+
+    <thead>
+
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Blood Group</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+
+    </thead>
+
+    <tbody id="patientTable">
+    </tbody>
+
+  </table>
+
+  <script>
+
+    function loadPatients() {
+
+      const patients =
+        JSON.parse(localStorage.getItem("patients")) || [];
+
+      let rows = "";
+
+      patients.forEach((patient, index) => {
+
+        rows += `
+<tr>
+<td>${patient.name}</td>
+<td>${patient.age}</td>
+<td>${patient.gender}</td>
+<td>${patient.bloodGroup}</td>
+<td>${patient.phone}</td>
+<td>${patient.email}</td>
+
+<td>
+<button onclick="deletePatient(${index})">
+Delete
+</button>
+</td>
+
+</tr>
+`;
+
+      });
+
+      document.getElementById("patientTable")
+        .innerHTML = rows;
+
+    }
+
+    function deletePatient(index) {
+
+      let patients =
+        JSON.parse(localStorage.getItem("patients")) || [];
+
+      patients.splice(index, 1);
+
+      localStorage.setItem(
+        "patients",
+        JSON.stringify(patients)
+      );
+
+      loadPatients();
+
+    }
+
+    function searchPatient() {
+
+      let keyword =
+        document.getElementById("search")
+          .value
+          .toLowerCase();
+
+      const patients =
+        JSON.parse(localStorage.getItem("patients")) || [];
+
+      let rows = "";
+
+      patients.forEach((patient, index) => {
+
+        if (
+          patient.name.toLowerCase()
+            .includes(keyword)
+        ) {
+
+          rows += `
+<tr>
+<td>${patient.name}</td>
+<td>${patient.age}</td>
+<td>${patient.gender}</td>
+<td>${patient.bloodGroup}</td>
+<td>${patient.phone}</td>
+<td>${patient.email}</td>
+
+<td>
+<button onclick="deletePatient(${index})">
+Delete
+</button>
+</td>
+</tr>
+`;
+        }
+
+      });
+
+      document.getElementById("patientTable")
+        .innerHTML = rows;
+
+    }
+
+    loadPatients();
+
+  </script>
+
+</body>
+
+</html>

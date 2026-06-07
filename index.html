@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Lab Management System</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="images/04.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style1.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#">
+          <img src="images/07.webp" alt="SimpleBlog logo" width="80" class="logo-light">
+          <img src="images/07.webp" alt="SimpleBlog logo" width="80" class="logo-dark">
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#Services" class="nav-link">Services</a>
+            </li>
+
+            <li>
+              <a href="register.html" class="nav-link">Registration</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+
+            <li>
+              <a href="dashboard.html" class="nav-link">Dashboard</a>
+            </li>
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="register.html" class="nav-link">Registretion</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <p class="h3 nav-title">Topics</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Database</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Accessibility</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Web Performance</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+
+    <!--
+      - #HERO SECTION
+    -->
+
+    <div class="hero">
+
+      <div class="container">
+
+        <div class="left">
+
+          <h1 class="h1">
+            🩸 <b>Blood&nbsp;Test</b>
+            <br>Laboratory Analysis
+          </h1>
+
+          <div class="btn-group">
+            <a href="contact.html" class="btn btn-primary">Contact Me</a>
+            <a href="register.html" class="btn btn-secondary">Registeretion</a>
+          </div>
+
+        </div>
+
+        <div class="right">
+
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="images/02.png" alt="Julia Walker" class="hero-img">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="main" id="Services">
+
+      <div class="container">
+
+        <!--
+          - BLOG SECTION
+        -->
+
+        <div class="blog">
+
+          <h2 class="h2">Clinical Laboratory Services</h2>
+
+          <div class="blog-card-group">
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/03.png" alt="Building microservices with Dropwizard, MongoDB & Docker" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <h3>
+                  <a href="#" class="h3">
+                    Blood Tests
+                  </a>
+                </h3>
+
+                <p class="blog-text">
+                  Blood tests analyze your blood to diagnose diseases, monitor treatments, and evaluate organ function.
+                  A healthcare provider draws a small sample, which is then processed in a laboratory to measure
+                  components like cells, chemicals, and proteins
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/06.png" alt="Julia Walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Rushi Pund</a>
+
+                    <p class="text-sm">
+                      <time datetime="2022-01-17">Jan 17, 2026</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">10.00 PM</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/04.png" alt="Fast web page loading on a $20 feature phone" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <!-- <button class="blog-topic text-tiny">Drog Tests</button> -->
+
+                <h3><a href="" class="h3">Drog Tests</a></h3>
+
+                <p class="blog-text">
+                  A blood drug test measures the presence of legal or illegal substances in your bloodstream. Because
+                  drugs are metabolized and eliminated from the blood relatively quickly, blood tests are highly
+                  accurate at detecting recent use or current intoxication rather than past history.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/06.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Kalpesh Kumar</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-12-10">Feb 10, 2026</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT2M">12.00 PM</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/05.png" alt="Accessibility Tips for Web Developers" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <!-- <button class="blog-topic text-tiny">Hematology</button> -->
+
+                <h3><a href="" class="h3">Hematology..</a></h3>
+
+                <p class="blog-text">
+                  Hematology is the study of blood, blood-forming organs, and blood disorders. Clinical hematology
+                  laboratories perform diagnostic tests to evaluate cell counts (red cells, white cells, platelets),
+                  hemoglobin, and clotting factors to help diagnose conditions like anemia, infections, hemophilia, and
+                  leukemia.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/06.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Akshay Sharma</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-28">Mar 28, 2026</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">02.30 PM</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/06.png" alt="Dynamically Securing Databases using Hashicorp Vault" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <!-- <button class="blog-topic text-tiny">Database</button> -->
+
+                <h3><a href="" class="h3">Thyroid Panel (TSH, T3, T4)</a></h3>
+
+                <p class="blog-text">
+                  A thyroid panel (TSH, T3, T4) is a group of blood tests used to evaluate how well your thyroid gland
+                  is functioning. These tests diagnose conditions like hypothyroidism (underactive thyroid) and
+                  hyperthyroidism (overactive thyroid) by measuring hormone production and the communication between
+                  your pituitary gland and thyroid.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/06.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Sayali Kulkarni</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-20">Mar 04, 2026</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">02.30 PM</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/07.webp" alt="Adaptive Loading - Improving Web Performance on low-end devices"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <!-- <button class="blog-topic text-tiny">Web Performance</button> -->
+
+                <h3><a href="" class="h3">Blood Tests: A Comprehensive Guide</a></h3>
+
+                <p class="blog-text">
+                  Blood tests are routine laboratory analyses used to diagnose diseases, monitor chronic conditions,
+                  check organ function, and evaluate overall health. A healthcare provider will draw a small sample of
+                  blood—usually from your arm—and send it to a lab for testing.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/06.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Shubhangi SK</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-10">Jan 10, 2026</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">05.30</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/08.webp"
+                  alt="Don't Develop Just for Yourself - A Developer's Checklist to Accessibility" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <h3><a href="" class="h3">Complete Blood Count (CBC)</a>
+                </h3>
+
+                <p class="blog-text">
+                  Evaluates overall health and detects a wide range of disorders, including anemia and infection.
+                  1] It measures:RBC (Red Blood Cells)
+                  2] WBC (White Blood Cells)
+                  3] Hb / Hgb (Hemoglobin)
+                  4] HCT (Hematocrit)
+                  5] PLT (Platelets)
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/06.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">---------</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-10-25">Oct 25, 2021</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT7M">7 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/09.webp" alt="Building a Restful CRUD API with Node JS, Express, and MongoDB"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <!-- <button class="blog-topic text-tiny">Database</button> -->
+
+                <h3><a href="" class="h3">Liver Function Tests (LFTs)</a></h3>
+
+                <p class="blog-text">
+                  A group of tests that evaluate the performance and health of the liver. They measure enzymes and
+                  proteins produced by the liver, such as:
+                  1] ALT (Alanine Aminotransferase)
+                  2] AST (Aspartate Aminotransferase)
+                  3] Bilirubin
+                  4] ALP (Alkaline Phosphatase)
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/06.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">--------</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-10-15">--------1</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT5M">-----</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/10.webp" alt="Monitoring Performance with the PageSpeed Insights API" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <!-- <button class="blog-topic text-tiny">Web Performance</button> -->
+
+                <h3><a href="" class="h3">Comprehensive Metabolic Panel (CMP)</a></h3>
+
+                <p class="blog-text">
+                  A Comprehensive Metabolic Panel (CMP) is a routine blood test that measures 14 different substances to
+                  evaluate your metabolism, fluid balance, and the health of your liver and kidneys. Doctors frequently
+                  use it for routine physicals, monitoring chronic diseases like diabetes, or checking for medication
+                  side effects
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/06.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">--------</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-10-03">--------1</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT5M">-----</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/11.jfif" alt="The best web accessibility tools for developers in 2021" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <!-- <button class="blog-topic text-tiny">Accessibility</button> -->
+
+                <h3><a href="" class="h3">Kidney/Renal Function Tests</a>
+                </h3>
+
+                <p class="blog-text">
+                  A kidney renal function test (RFT) evaluates how effectively your kidneys filter waste and balance
+                  fluids. It typically involves blood and urine tests to measure markers like creatinine, BUN, and
+                  electrolytes. Regular testing is vital for monitoring chronic conditions like diabetes and high blood
+                  pressure.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/06.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">--------</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-09-13">----------</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT7M">------</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/12.jfif" alt="How to connect a React frontend with a NodeJS/Express backend"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <!-- <button class="blog-topic text-tiny">Database</button> -->
+
+                <h3><a href="" class="h3">Circulating Tumor Test(Liquid Biopsy)</a></h3>
+
+                <p class="blog-text">
+                  A liquid biopsy is a minimally invasive blood test that detects cancer by analyzing circulating tumor
+                  DNA (ctDNA) or circulating tumor cells (CTCs) shed into the bloodstream. It offers a rapid, painless,
+                  and dynamic alternative to traditional surgical tissue biopsies for diagnosing and monitoring cancers
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/12.jfif" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">--------</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-09-21">---------</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">-----</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <button class="btn load-more">Load More</button>
+
+        </div>
+
+
+
+
+
+        <!--
+          - ASIDE
+        -->
+
+        <div class="aside">
+
+          <div class="topics">
+
+            <!-- <h2 class="h2">Topics</h2> -->
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="earth-outline"></ion-icon>
+              </div>
+
+              <p>Quality First</p>
+            </a>
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="globe-outline"></ion-icon>
+              </div>
+
+              <p>Global Reach</p>
+            </a>
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+
+              <p>Patient Care</p>
+            </a>
+
+          </div>
+
+          <div class="tags">
+
+            <h2 class="h2">Tags</h2>
+
+            <div class="wrapper">
+
+              <button class="hashtag">#blood lab</button>
+              <button class="hashtag">#Doctar</button>
+              <button class="hashtag">#Test</button>
+              <button class="hashtag">#Online Result</button>
+              <button class="hashtag">#Laboratory</button>
+              <button class="hashtag">#Blood test</button>
+              <button class="hashtag">#(ECG)</button>
+              <button class="hashtag">#24/7 Support</button>
+
+            </div>
+
+          </div>
+
+          <div class="contact">
+
+            <h2 class="h2">Blood Labortory Analysis</h2>
+
+            <div class="wrapper">
+
+              <p>
+                Blood Labortory analysis (blood work) is a diagnotic process where a blood sample is drawn and analysis
+                to measure calls, chemicals, proteins, and evaluate organ function...
+              </p>
+
+              <ul class="social-link">
+
+                <li>
+                  <a href="#" class="icon-box discord">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="newsletter">
+
+            <h2 class="h2">Newsletter</h2>
+
+            <div class="wrapper">
+
+              <p>
+                Subscribe to our newsletter to be among the first to keep up with the latest updates.
+              </p>
+
+              <form action="#">
+                <input type="email" name="email" placeholder="Email Address" required>
+
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <img src="images/07.webp" alt="SimpleBlog Logo" width="150" class="logo-light">
+          <img src="images/07.webp" alt="SimpleBlog Logo" width="150" class="logo-dark">
+        </a>
+
+        <p class="footer-text">
+          Blood Lab Management System
+          Address : Nanded City Pund
+         <br> Contact : 9822718195
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Registration</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Legal Stuff</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Dashboard</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms Of Use</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="copyright">
+      &copy; Copyright 2026 <a href="#">&copy; Rishu Pund</a>
+    </p>
+
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script1.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
